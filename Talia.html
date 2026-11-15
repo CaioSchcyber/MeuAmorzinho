@@ -1,0 +1,1113 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Para Talia, com amor ❤️</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+<style>
+:root {
+    --pink: #e88ba8;
+    --deep: #a83e65;
+    --wine: #71334d;
+    --cream: #fff8f7;
+    --soft: #ffe9ef;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #fff6f7;
+    color: var(--wine);
+    font-family: 'Poppins', sans-serif;
+    overflow-x: hidden;
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+    z-index: -1;
+    background:
+      radial-gradient(circle at 10% 20%, #fbd2df 0, transparent 30%),
+      radial-gradient(circle at 90% 70%, #f9dce7 0, transparent 35%),
+      linear-gradient(135deg, #fff8f8, #fff0f4);
+}
+
+::selection {
+    background: #e99ab3;
+    color: white;
+}
+
+/* CORAÇÕES FLUTUANTES */
+
+.floating {
+    position: fixed;
+    bottom: -40px;
+    color: #e78ba8;
+    opacity: .35;
+    pointer-events: none;
+    z-index: 0;
+    animation: floatUp linear infinite;
+}
+
+@keyframes floatUp {
+    from {
+        transform: translateY(0) rotate(0deg);
+        opacity: 0;
+    }
+    15% { opacity: .35; }
+    to {
+        transform: translateY(-115vh) rotate(35deg);
+        opacity: 0;
+    }
+}
+
+/* CAPA */
+
+.hero {
+    min-height: 100vh;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 35px 20px;
+    overflow: hidden;
+    background:
+      radial-gradient(ellipse at center, #fffafb 0%, #ffe9ef 55%, #f8d3e0 100%);
+}
+
+.hero::before,
+.hero::after {
+    content: "✿";
+    position: absolute;
+    color: #d9829e;
+    opacity: .22;
+    font-size: 190px;
+}
+
+.hero::before {
+    top: -50px;
+    left: -45px;
+}
+
+.hero::after {
+    bottom: -65px;
+    right: -35px;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+    max-width: 700px;
+    animation: appear 1.5s ease;
+}
+
+@keyframes appear {
+    from {
+        opacity: 0;
+        transform: translateY(35px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.small-title {
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    color: #ad607b;
+    font-size: 11px;
+    margin-bottom: 20px;
+}
+
+.hero-heart {
+    font-size: 65px;
+    display: inline-block;
+    animation: heartbeat 1.8s infinite;
+    filter: drop-shadow(0 5px 15px #d77b9870);
+}
+
+@keyframes heartbeat {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.17); }
+}
+
+.hero h1 {
+    font-family: 'Great Vibes', cursive;
+    font-size: clamp(65px, 12vw, 110px);
+    font-weight: 400;
+    color: #bd5578;
+    margin: 10px 0;
+    text-shadow: 0 5px 20px #e8a1b933;
+}
+
+.hero h2 {
+    font-family: 'Playfair Display', serif;
+    font-weight: 400;
+    font-size: clamp(19px, 4vw, 28px);
+    color: #8e5369;
+    letter-spacing: 2px;
+}
+
+.hero-description {
+    max-width: 470px;
+    margin: 25px auto;
+    font-size: 14px;
+    line-height: 2;
+    color: #91677a;
+}
+
+.decorative-line {
+    color: #c66e8c;
+    letter-spacing: 8px;
+    margin: 25px 0;
+}
+
+.main-button {
+    display: inline-block;
+    padding: 15px 35px;
+    border-radius: 50px;
+    color: white;
+    text-decoration: none;
+    font-size: 13px;
+    letter-spacing: 1px;
+    background: linear-gradient(135deg, #e995af, #bd5579);
+    box-shadow: 0 8px 25px #c55d8050;
+    transition: .3s;
+    border: none;
+    cursor: pointer;
+}
+
+.main-button:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 30px #c55d8070;
+}
+
+/* NAVEGAÇÃO */
+
+nav {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    background: #fff8f5eF;
+    backdrop-filter: blur(15px);
+    border-bottom: 1px solid #f5dce4;
+    padding: 15px 10px;
+}
+
+.nav-content {
+    display: flex;
+    justify-content: center;
+    gap: 28px;
+    flex-wrap: wrap;
+}
+
+nav a {
+    text-decoration: none;
+    color: #a75a76;
+    font-size: 11px;
+    letter-spacing: 1px;
+    transition: .3s;
+}
+
+nav a:hover {
+    color: #df668e;
+}
+
+/* SEÇÕES */
+
+section {
+    max-width: 1000px;
+    padding: 100px 25px;
+    margin: auto;
+    position: relative;
+    z-index: 1;
+}
+
+.section-label {
+    color: #cf829a;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    font-size: 10px;
+    margin-bottom: 15px;
+}
+
+.section-title {
+    font-family: 'Playfair Display', serif;
+    color: #a94e70;
+    font-size: clamp(30px, 6vw, 43px);
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+.section-title span {
+    font-style: italic;
+    color: #d27b98;
+}
+
+.section-intro {
+    max-width: 570px;
+    margin: auto;
+    font-size: 13px;
+    line-height: 2.1;
+    color: #967184;
+}
+
+.center {
+    text-align: center;
+}
+
+/* CARTÕES */
+
+.love-card {
+    background: #ffffffb8;
+    border: 1px solid #f5dce5;
+    border-radius: 25px;
+    padding: 45px 35px;
+    margin-top: 35px;
+    box-shadow: 0 15px 45px #b85b7820;
+    backdrop-filter: blur(12px);
+    position: relative;
+    transition: .4s;
+}
+
+.love-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 20px 50px #b85b7830;
+}
+
+.card-icon {
+    font-size: 35px;
+    margin-bottom: 20px;
+}
+
+.love-card p {
+    font-size: 14px;
+    line-height: 2.2;
+    color: #795267;
+    margin-bottom: 12px;
+}
+
+.love-card strong {
+    color: #b64e73;
+}
+
+/* GALERIA */
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+    margin-top: 50px;
+}
+
+.photo-card {
+    background: white;
+    padding: 12px 12px 22px;
+    border-radius: 13px;
+    box-shadow: 0 12px 35px #a94e7020;
+    transform: rotate(-1deg);
+    transition: .4s;
+}
+
+.photo-card:nth-child(even) {
+    transform: rotate(1deg);
+}
+
+.photo-card:hover {
+    transform: rotate(0) scale(1.035);
+    box-shadow: 0 18px 40px #a94e7040;
+}
+
+.photo-card img {
+    display: block;
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+    border-radius: 7px;
+    background: #fce2ea;
+}
+
+/* ESTILO DO VÍDEO */
+
+.photo-card video {
+    display: block;
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+    border-radius: 7px;
+    background: #fce2ea;
+}
+
+.photo-caption {
+    font-family: 'Great Vibes', cursive;
+    font-size: 27px;
+    color: #b65c7c;
+    margin-top: 14px;
+}
+
+/* LINHA DO TEMPO */
+
+.timeline {
+    position: relative;
+    max-width: 650px;
+    margin: 50px auto 0;
+}
+
+.timeline::before {
+    content: "";
+    position: absolute;
+    left: 20px;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background: linear-gradient(#e9a2b8, #f6d5df);
+}
+
+.timeline-item {
+    position: relative;
+    padding: 0 0 35px 60px;
+    text-align: left;
+}
+
+.timeline-item::before {
+    content: "♥";
+    position: absolute;
+    left: 8px;
+    top: 0;
+    color: #cf6f90;
+    background: #fff6f7;
+    padding: 5px;
+    font-size: 15px;
+}
+
+.timeline-item h3 {
+    font-family: 'Playfair Display', serif;
+    color: #ae5777;
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.timeline-item p {
+    font-size: 13px;
+    color: #8e6a7d;
+    line-height: 2;
+}
+
+/* CARTA */
+
+.letter-section {
+    background: linear-gradient(135deg, #fbe2e9, #fff3f5);
+    border-radius: 35px;
+    padding: 65px 35px;
+    margin-top: 25px;
+    border: 1px solid #f3ccd9;
+    box-shadow: 0 15px 45px #c56b8520;
+    position: relative;
+}
+
+.letter-section::before {
+    content: "❀";
+    position: absolute;
+    top: 15px;
+    right: 25px;
+    font-size: 40px;
+    color: #d48ba3;
+    opacity: .5;
+}
+
+.letter-section p {
+    font-family: 'Playfair Display', serif;
+    font-size: 17px;
+    line-height: 2.2;
+    color: #82536a;
+    margin-bottom: 15px;
+}
+
+.signature {
+    font-family: 'Great Vibes', cursive;
+    font-size: 42px;
+    color: #bb5a7c;
+    margin-top: 25px;
+}
+
+/* DISTÂNCIA */
+
+.distance {
+    background: linear-gradient(140deg, #a94c70, #d984a1);
+    border-radius: 30px;
+    color: white;
+    padding: 55px 35px;
+    box-shadow: 0 15px 40px #9e47652e;
+}
+
+.distance h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 34px;
+    font-weight: 400;
+    margin-bottom: 25px;
+}
+
+.distance p {
+    color: #fff2f6;
+    font-size: 14px;
+    line-height: 2.2;
+    margin-bottom: 12px;
+}
+
+.distance strong {
+    color: white;
+}
+
+/* CONTADOR */
+
+.counter {
+    background: white;
+    padding: 35px 20px;
+    border-radius: 25px;
+    box-shadow: 0 10px 35px #a94e7020;
+    margin-top: 35px;
+    border: 1px solid #f4dbe4;
+}
+
+.counter-number {
+    font-family: 'Playfair Display', serif;
+    font-size: 65px;
+    color: #c65e81;
+}
+
+.counter p {
+    color: #986b7e;
+    font-size: 13px;
+}
+
+/* SURPRESA */
+
+.surprise-area {
+    text-align: center;
+    padding: 60px 25px 100px;
+}
+
+.surprise-button {
+    border: none;
+    background: linear-gradient(135deg, #e99bb3, #b94e74);
+    color: white;
+    padding: 18px 35px;
+    border-radius: 50px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 13px;
+    cursor: pointer;
+    box-shadow: 0 10px 30px #c65e8150;
+    transition: .3s;
+}
+
+.surprise-button:hover {
+    transform: scale(1.07);
+}
+
+#surprise {
+    display: none;
+    max-width: 650px;
+    margin: 40px auto 0;
+    background: white;
+    border: 1px solid #f3d6e0;
+    border-radius: 25px;
+    padding: 40px 25px;
+    box-shadow: 0 15px 45px #a94e7025;
+    animation: appear 1s ease;
+}
+
+#surprise h2 {
+    font-family: 'Great Vibes', cursive;
+    color: #bd5578;
+    font-size: 45px;
+    margin-bottom: 20px;
+}
+
+#surprise p {
+    font-size: 14px;
+    line-height: 2.1;
+    color: #8b5e73;
+}
+
+/* RODAPÉ */
+
+footer {
+    background: linear-gradient(135deg, #f8dce5, #fcecf0);
+    padding: 55px 20px;
+    text-align: center;
+}
+
+footer h2 {
+    font-family: 'Great Vibes', cursive;
+    color: #b65073;
+    font-size: 45px;
+    font-weight: 400;
+}
+
+footer p {
+    font-size: 11px;
+    color: #a36f83;
+    margin-top: 15px;
+    letter-spacing: 1px;
+}
+
+.footer-heart {
+    font-size: 25px;
+    margin: 15px;
+}
+
+/* RESPONSIVO */
+
+@media(max-width: 600px) {
+    section {
+        padding: 75px 18px;
+    }
+
+    .gallery {
+        grid-template-columns: 1fr;
+        max-width: 400px;
+        margin: 35px auto;
+    }
+
+    .photo-card img,
+    .photo-card video {
+        height: 300px;
+    }
+
+    .love-card {
+        padding: 30px 23px;
+    }
+
+    .letter-section {
+        padding: 50px 23px;
+    }
+
+    nav {
+        padding: 13px 5px;
+    }
+
+    .nav-content {
+        gap: 13px;
+    }
+
+    nav a {
+        font-size: 9px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<!-- CORAÇÕES ANIMADOS -->
+<div id="hearts"></div>
+
+<!-- CAPA -->
+<header class="hero" id="inicio">
+    <div class="hero-content">
+
+        <div class="small-title">
+            UMA HISTÓRIA CHAMADA NÓS DOIS
+        </div>
+
+        <div class="hero-heart">♡</div>
+
+        <h1>Talia</h1>
+
+        <h2>Happy 2 Months Together</h2>
+
+        <div class="decorative-line">
+            ✧ ───── ♥ ───── ✧
+        </div>
+
+        <p class="hero-description">
+            Se eu pudesse escolher novamente entre
+            conhecer milhares de pessoas ou encontrar
+            você mais uma vez, eu escolheria você.
+            Sempre você.
+        </p>
+
+        <a href="#historia" class="main-button">
+            ENTRE NA NOSSA HISTÓRIA ♡
+        </a>
+
+    </div>
+</header>
+
+<!-- MENU -->
+<nav>
+    <div class="nav-content">
+        <a href="#inicio">INÍCIO</a>
+        <a href="#historia">NOSSA HISTÓRIA</a>
+        <a href="#fotos">FOTOS</a>
+        <a href="#distancia">DISTÂNCIA</a>
+        <a href="#carta">CARTA</a>
+    </div>
+</nav>
+
+<!-- HISTÓRIA -->
+<section id="historia" class="center">
+
+    <div class="section-label">CAPÍTULO 01 · O COMEÇO</div>
+
+    <h2 class="section-title">
+        Como é bom ter <span>você</span>
+    </h2>
+
+    <p class="section-intro">
+        Algumas pessoas chegam sem avisar e acabam
+        se tornando uma das partes mais bonitas
+        da nossa história.
+    </p>
+
+    <div class="love-card">
+
+        <div class="card-icon">🌷</div>
+
+        <p>
+            Talia, eu queria aproveitar nossos dois meses
+            para dizer algo que talvez eu não consiga
+            expressar completamente em palavras.
+        </p>
+
+        <p>
+            Eu amei ter conhecido você neste ano.
+            De todas as coisas que aconteceram,
+            conhecer você foi uma das que mais
+            fizeram diferença na minha vida.
+        </p>
+
+        <p>
+            É incrível pensar que uma pessoa que antes
+            era apenas uma MELHOR AMIGA(Minha twis) hoje em dia é
+            a melhor namorada do MUNDO que faz MUITA diferença na minha vida.
+           
+        </p>
+
+        <p>
+            E sabe de uma coisa?
+            <strong>Eu sou muito feliz por ter conhecido você.</strong>
+        </p>
+
+    </div>
+
+    <div class="counter">
+        <div class="counter-number">02</div>
+        <p>MESES DE NAMORO</p>
+        <p style="margin-top:12px;">E uma história inteira pela frente. ♡</p>
+    </div>
+
+</section>
+
+<!-- FOTOS E VÍDEO -->
+
+
+<section id="fotos" class="center">
+
+    <div class="section-label">CAPÍTULO 02 · MINHAS MEMÓRIAS</div>
+
+    <h2 class="section-title">
+        Um pedacinho do <span>meu mundo</span>
+    </h2>
+
+    <p class="section-intro">
+        Quatro lembranças, quatro momentos,
+        e infinitos motivos para sorrir.
+    </p>
+
+    <div class="gallery">
+
+        <!-- FOTO 1 -->
+        <div class="photo-card">
+            <img src="meu amorzinho sorrindo.png" alt="Nossa primeira foto">
+            <div class="photo-caption">A Pessoa que eu mais amo♡</div>
+        </div>
+
+        <!-- FOTO 2 -->
+        <div class="photo-card">
+            <img src="minha esposa.jpg" alt="Nossa segunda foto">
+            <div class="photo-caption">Minha futura esposa ♡</div>
+        </div>
+
+        <!-- foto 3 -->
+        <div class="photo-card">
+
+           <img src="minhaGatinhaDeOculos2.jpg" alt="Nossa segunda foto">
+            <div class="photo-caption">A mãe dos meus filhos ♡</div>
+
+            <div class="photo-caption">
+                 
+            </div>
+
+        </div>
+
+        <!-- FOTO 4 -->
+        <div class="photo-card">
+            <img src="Meu amorzinho Gotica.png" alt="Nossa quarta foto">
+            <div class="photo-caption">Minha gótica rabudinha ♡</div>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- LINHA DO TEMPO -->
+<section class="center">
+
+    <div class="section-label">CAPÍTULO 03 · NOSSA JORNADA</div>
+
+    <h2 class="section-title">
+        Pequenos capítulos de <span>nós</span>
+    </h2>
+
+    <div class="timeline">
+
+        <div class="timeline-item">
+            <h3>O dia em que nos conhecemos</h3>
+            <p>
+            Tudo começou com uma briguinha, que acabou me fazendo subir para a call de cima, onde você estava.
+            Depois que te conheci melhor começamos a construir uma amizade, descobri que tínhamos muitas coisas em comum e que éramos muito parecidos. Isso me deixou bastante feliz, pois percebi que existia alguém no mundo que compartilhava dos mesmos gostos, das mesmas brincadeiras e das mesmas gracinhas que eu.
+            Tudo isso fez com que nos aproximássemos cada vez mais, fortalecendo nossa amizade e tornando-a ainda mais especial.
+            </p>
+        </div>
+
+        <div class="timeline-item">
+            <h3>Nossas primeiras conversas</h3>
+            <p>
+               Bom, não me lembro muito bem das nossas primeiras conversas. Só sei que, depois daquela briguinha, começamos a jogar juntos, eu, você e o Icaro, e nos divertíamos muito. Não sei se já te contei, mas foi justamente naquela época que comecei a me apaixonar cada vez mais por você.
+
+O seu jeito de me tratar, de rir comigo, de me fazer feliz até nas coisas mais simples e essa sua personalidade tão divertida fizeram com que eu passasse a te admirar cada vez mais. Aos poucos, fui percebendo o quanto você era especial para mim e o quanto eu gostava de ter você na minha vida.
+
+E hoje eu só tenho uma certeza: escolhi a pessoa certa para compartilhar minha vida. VOCÊ é a pessoa que eu quero ao meu lado, VOCÊ é única, VOCÊ é especial de um jeito que ninguém mais poderia ser. Quero continuar escolhendo você todos os dias, vivendo novas histórias, criando lembranças e construindo nosso futuro juntinhos.
+
+EU TE AMO MUITOOOO! E espero que você nunca se esqueça do quanto é importante para mim e do quanto sou feliz por ter você na minha vida. ❤️
+            </p>
+        </div>
+
+        <div class="timeline-item">
+            <h3>O início do nosso namoro</h3>
+            <p>
+                Aos poucos, você foi se tornando alguém que eu não conseguia mais imaginar longe de mim. Alguém que eu queria ter por perto todos os dias, em todos os momentos. A verdade é que eu queria você só para mim. Não queria que você fosse apenas minha melhor amiga, porque, no fundo, meu coração desejava muito mais. Eu queria você como minha namorada, minha futura esposa e, acima de tudo, como a pessoa com quem eu pudesse compartilhar minha vida. Queria construir algo único, especial e que fosse somente nosso.
+
+Mas, como você conhece toda a história, eu guardava esse sentimento em segredo porque me preocupava bastante com um amigo que, no fim das contas, nem sequer se importava comigo da mesma maneira. Até que chegou um momento em que não consegui mais esconder o que sentia. Depois de tantas cutucadas suas tentando descobrir de quem eu gostava, finalmente criei coragem e contei que era você.
+
+E, sinceramente, eu estava morrendo de medo. Tinha receio de que você não sentisse o mesmo por mim, de que tudo mudasse entre nós e de que aquele sentimento tão bonito que eu guardava acabasse não sendo correspondido. Mas você me surpreendeu de uma maneira que eu jamais vou esquecer. Você me aceitou exatamente como eu sou, acolheu meus sentimentos e me mostrou que eu não precisava ter medo de gostar tanto de alguém.
+
+Não consigo explicar o quanto isso significou para mim. Saber que a pessoa por quem eu tanto sentia algo também queria estar comigo foi uma das coisas que mais me fizeram feliz. E, desde então, meu amor por você só cresceu. Hoje, não consigo deixar de agradecer por aquele dia em que finalmente tive coragem de contar que era você. Afinal, entre tantas pessoas no mundo, foi justamente você quem fez meu coração encontrar um lugar onde queria ficar.
+            </p>
+        </div>
+
+        <div class="timeline-item">
+            <h3>Dois meses de nós dois</h3>
+            <p>
+                Hoje estamos aqui, comemorando mais um mês de namoro juntos, e eu simplesmente amo tudo o que estamos construindo. Cada momento ao seu lado se torna especial, e sou muito feliz por poder compartilhar minha vida com você. Mal posso esperar por tudo o que ainda vamos viver e construir juntos.
+
+EU TE AMO MUITOOOO, GAROTA! VOCÊ ME DEIXA COMPLETAMENTE LOUCOOOOO DE AMOR POR VOCÊ! ❤️
+            </p>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- DIAS JUNTOS -->
+<section class="center">
+
+    <div class="section-label">CAPÍTULO 04 · MEUS DIAS</div>
+
+    <h2 class="section-title">
+        Você deixa tudo mais <span>especial</span>
+    </h2>
+
+    <div class="love-card">
+
+        <div class="card-icon">🦋</div>
+
+        <p>
+            Eu amo tanto nossas conversas, nossas brincadeiras,
+            nossas risadas e todos aqueles pequenos
+            momentos nos jogos que talvez pareçam simples,
+            mas significam muito para mim. adoro suas manias (Poinhoinhoinhoi, tananana)
+            Amo tanto quando você me enche de carinho
+            antes de eu ir dormi
+        </p>
+
+        <p>
+            Eu simplesmente sou APAIXONADO pelo seu sorriso LINDO e PERFEITO.
+            Eu amo quando podemos se ver e conversar qualquer sobre
+            coisa em chamadas de videos, quando compartilhamos nossos dias
+            e quando simplesmente estamos ali um para
+            o outro.
+        </p>
+
+        <p>
+            Talvez você não perceba, mas existem momentos
+            em que uma simples mensagem sua consegue
+            deixar meu dia muito melhor, na real so de você existir ja deixa o meu dia melhor.
+        </p>
+
+        <p>
+            Quero continuar descobrindo coisas novas
+            sobre você, aprendendo a te compreender
+            e construindo lembranças que sejam nossas.
+        </p>
+
+        <p>
+            <strong>Você é uma das minhas partes favoritas
+            deste ano e nos proximos anos.</strong>
+        </p>
+
+    </div>
+
+</section>
+
+<!-- DISTÂNCIA -->
+<section id="distancia" class="center">
+
+    <div class="distance">
+
+        <div class="card-icon">🌎</div>
+
+        <h2>Entre nós existe uma distância, mas também existe um sentimento muito grande.</h2>
+
+        <p>
+            Eu sei que por enquanto nosso relacionamento
+            acontece através de uma tela (Por enquanto).
+        </p>
+
+        <p>
+            Sei que existem momentos em que tudo que
+            eu gostaria era poder estar ao seu lado,
+            conversar olhando nos seus olhos e aproveitar
+            sua companhia pessoalmente.
+        </p>
+
+        <p>
+            Mas quero que você saiba que não pretendo
+            deixar a distância ser o fim dos nossos sonhos.
+        </p>
+
+        <p>
+            <strong>
+                Eu farei de tudo para conseguir te ver todos os dias,
+                Talia.
+            </strong>
+        </p>
+
+        <p>
+            Quero transformar nossas chamadas em
+            encontros, nossas mensagens em conversas
+            presenciais e finalmente criar lembranças
+            ao seu lado, sem precisar de uma tela.
+        </p>
+
+        <div style="font-size:35px; margin-top:25px;">
+            ♡ ∞ ♡
+        </div>
+
+    </div>
+
+</section>
+
+<!-- CARTA -->
+<section id="carta" class="center">
+
+    <div class="section-label">CAPÍTULO 05 · COM CARINHO</div>
+
+    <h2 class="section-title">
+        Uma carta para <span>você</span>
+    </h2>
+
+    <div class="letter-section">
+
+        <div style="font-size:35px; margin-bottom:25px;">
+            💌
+        </div>
+
+        <p><strong>Minha Talia,</strong></p>
+
+        <p>
+            Eu nem sei exatamente por onde começar,
+            porque existem tantas coisas que gostaria
+            de dizer.
+        </p>
+
+        <p>
+            Primeiramente, obrigado por ter aparecido
+            na minha vida. Eu amei ter conhecido você
+            neste ano e sou muito grato por tudo que
+            estamos construindo.
+        </p>
+
+        <p>
+            Esses dois meses podem parecer pouco tempo
+            para algumas pessoas, mas cada momento
+            que compartilhamos tem um significado
+            especial para mim.
+        </p>
+
+        <p>
+            Não quero que você pense que a distância
+            faz com que eu leve nosso relacionamento
+            menos a sério. Pelo contrário, quero fazer
+            o possível para que um dia possamos viver
+            tudo aquilo que imaginamos juntos.
+        </p>
+
+        <p>
+            Não sei quantas páginas ainda teremos
+            para escrever, mas espero que sejam muitas.
+            Quero continuar comemorando nossos meses,
+            nossos anos e todas as pequenas conquistas
+            que vierem.
+        </p>
+
+        <p>
+            Obrigado por ser você, por compartilhar
+            seus dias comigo e por fazer parte
+            da minha história.
+        </p>
+
+        <p>
+            <strong>Feliz dois meses para nós, meu amor.</strong>
+        </p>
+
+        <div class="signature">
+            Com amor, seu namorado Caio Schuengue. ♡
+        </div>
+
+    </div>
+
+</section>
+
+<!-- SURPRESA -->
+<div class="surprise-area">
+
+    <div class="section-label">UM ÚLTIMO DETALHE</div>
+
+    <h2 class="section-title">
+        Ainda tenho algo para <span>você...</span>
+    </h2>
+
+    <p class="section-intro">
+        Preparei uma última mensagem.
+        Quero que você leia com carinho.
+    </p>
+
+    <button class="surprise-button" onclick="showSurprise()">
+        ABRIR MINHA SURPRESA ♡
+    </button>
+
+    <div id="surprise">
+
+        <div style="font-size:45px; margin-bottom:15px;">
+            💗
+        </div>
+
+        <h2>Talia, eu escolheria você.</h2>
+
+        <p>
+            Se eu pudesse voltar no tempo e conhecer
+            você novamente, faria tudo outra vez.
+        </p>
+
+        <p>
+            Não porque nossa história seja perfeita,
+            mas porque é a nossa história.
+        </p>
+
+        <p>
+            Feliz dois meses, meu amor.
+            Que esse seja apenas o começo de tudo
+            que ainda vamos viver.
+        </p>
+
+        <p>
+            E quando finalmente estivermos juntos,
+            quero poder olhar para você e dizer:
+            valeu a pena esperar.
+        </p>
+
+        <div style="font-size:30px; margin-top:20px;">
+            Eu e você. Hoje e nos próximos capítulos. ♡
+        </div>
+
+    </div>
+
+</div>
+
+<!-- RODAPÉ -->
+<footer>
+
+    <div class="footer-heart">♡</div>
+
+    <h2>Para sempre na minha história, Talia.</h2>
+
+    <p>
+        FEITO COM AMOR · 2 MESES DE NAMORO · 2026
+    </p>
+
+    <p style="margin-top:25px; font-size:20px;">
+        ✧  ♥  ✧
+    </p>
+
+</footer>
+
+<script>
+
+// CORAÇÕES FLUTUANTES
+const heartContainer = document.getElementById("hearts");
+
+const symbols = ["♡", "♥", "✧", "❤"];
+
+for (let i = 0; i < 22; i++) {
+
+    const heart = document.createElement("div");
+
+    heart.className = "floating";
+    heart.innerHTML =
+        symbols[Math.floor(Math.random() * symbols.length)];
+
+    heart.style.left = Math.random() * 100 + "vw";
+    heart.style.fontSize = (12 + Math.random() * 22) + "px";
+    heart.style.animationDuration = (9 + Math.random() * 13) + "s";
+    heart.style.animationDelay = (Math.random() * 12) + "s";
+
+    heartContainer.appendChild(heart);
+}
+
+// SURPRESA
+function showSurprise() {
+
+    const surprise = document.getElementById("surprise");
+
+    surprise.style.display = "block";
+
+    surprise.scrollIntoView({
+        behavior: "smooth",
+        block: "center"
+    });
+
+}
+
+</script>
+
+</body>
+</html>
